@@ -3,7 +3,6 @@
 :root {
   --primary: #71120b;
   --secondary: #4e4e4e;
-  --error: #ff4a4a;
 }
 
 body {
@@ -31,6 +30,7 @@ body {
   margin-top: 60px;
   margin-bottom: 1rem;
   font-size: 2.6rem;
+  color: var(--primary);
 }
 
 form {
@@ -69,7 +69,7 @@ label:hover {
 }
 
 .error {
-  color: var(--error);
+  color: var(--primary);
 }
 
 .progress-bar {
