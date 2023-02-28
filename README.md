@@ -5,4 +5,5 @@ LIVE WEBSITE:
 https://instush-react-firebase-gallery.onrender.com/
 
 
-![Screenshot](https://user-images.githubusercontent.com/93940739/221803991-3564978d-690a-4a80-9c6f-63ce5d2a2828.jpg)
+
+![Firebase-Gallery](https://user-images.githubusercontent.com/93940739/221841829-98ba1adb-f953-4f38-a5c7-f591998da5b5.jpg)
