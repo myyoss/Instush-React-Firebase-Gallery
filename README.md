@@ -1,6 +1,10 @@
 # Instush-React-Firebase-Gallery
 React galley app, stored on Firebase with fine touches with Framer-motion library.
 
+- Click on img for full size
+- Click on background outside img to close
+- Click on full size img to delete img
+
 LIVE WEBSITE:
 https://instush-react-firebase-gallery.onrender.com/
 
