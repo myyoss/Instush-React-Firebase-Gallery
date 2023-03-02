@@ -23,7 +23,8 @@ const Modal = ({ setSelectedImg, selectedImg }) => {
       .then((querySnapshot) => {
         querySnapshot.docs[0].ref.delete();
       });
-
+      
+    setSelectedImg(null);
     // pictureRef
     //   .delete()
     //   .then(() => {
