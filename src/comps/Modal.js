@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import * as firebase from "firebase/app";
 import "firebase/firestore";
-// import x from "./delete.svg";
 
 const Modal = ({ setSelectedImg, selectedImg }) => {
   const handleClick = (e) => {
@@ -13,8 +12,6 @@ const Modal = ({ setSelectedImg, selectedImg }) => {
 
   const handleDelete = (e) => {
     const url = selectedImg;
-    // let storage = firebase.storage();
-    // let pictureRef = storage.refFromURL(url);
 
     firebase
       .firestore()
@@ -24,18 +21,6 @@ const Modal = ({ setSelectedImg, selectedImg }) => {
       .then((querySnapshot) => {
         querySnapshot.docs[0].ref.delete();
       });
-      
-    setSelectedImg(null);
-    // pictureRef
-    //   .delete()
-    //   .then(() => {
-    //     setSelectedImg(null)
-    //     //  setImages(allImages.filter((image) => image !== url));
-    //     alert("Picture is deleted successfully!");
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
   };
 
   return (
