@@ -21,6 +21,7 @@ const Modal = ({ setSelectedImg, selectedImg }) => {
       .then((querySnapshot) => {
         querySnapshot.docs[0].ref.delete();
       });
+    setSelectedImg();
   };
 
   return (
@@ -36,8 +37,13 @@ const Modal = ({ setSelectedImg, selectedImg }) => {
         initial={{ y: "-100vh" }}
         animate={{ y: 0 }}
       />
-      <div className="deltetWrapper" onClick={handleDelete}>
-        <img className="deleteBtn" src="images/delete.svg" alt="delete" />
+      <div className="deltetWrapper">
+        <img
+          onClick={handleDelete}
+          className="deleteBtn"
+          src="images/delete.svg"
+          alt="delete"
+        />
       </div>
     </motion.div>
   );
