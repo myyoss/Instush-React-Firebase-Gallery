@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import * as firebase from "firebase/app";
 import "firebase/firestore";
+// import x from "./delete.svg";
 
 const Modal = ({ setSelectedImg, selectedImg }) => {
   const handleClick = (e) => {
@@ -45,12 +46,14 @@ const Modal = ({ setSelectedImg, selectedImg }) => {
       animate={{ opacity: 1 }}
     >
       <motion.img
-        onClick={handleDelete}
         src={selectedImg}
         alt="enlarged pic"
         initial={{ y: "-100vh" }}
         animate={{ y: 0 }}
       />
+      <div className="deltetWrapper" onClick={handleDelete}>
+        <img className="deleteBtn" src="images/delete.svg" alt="delete" />
+      </div>
     </motion.div>
   );
 };
